@@ -51,7 +51,7 @@ In case you've downloaded a newer version of `index.html`, meaning that the tag 
 When you're ready to upload your new front page, you can run the following:
 
 ```
-curl --cookie "connect.sid=<your-cookie-value>" --upload-file index.html https://<your-pod>/index.html
+curl –cookie “connect.sid=<insert cookie value>” https:<your pod>.net/ -F data=”@/<your/file/index.html>”
 ```
 
 (If it has been some time since you downloaded and changed your file, your cookie value might not be valid anymore. In that case you'll want to re-authenticate on your POD server and get the new cookie value.)
